@@ -15,8 +15,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="landing.html">Latitude</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,43 +45,37 @@
     </nav>
     <div id="main_content" class="container-fluid ">
         <div class="row">
-            <div class="col-lg-8 col-md-12">
-                <div class="viz-main">
-                    <p id="p1">Humidity</p>
-                    <hr>
-                    <div class="viz-main-img">
-                        <img class="texr-center" src="WebVisualizations/Resources/assets/images/Fig2.png" width=700 height=500 alt="Latitude vs Humidity">
-                    </div>
-                    <section>The purpose of this project is analyze how the weather changes gorgraphically, the data used in this project is pulled from OpenWeatherMap API to assamble a dataset of 500 cities.active After Assembling the dataset we used matplotlib
-                        to plot various aspect of the weather vs latitude.<br><br>Factors we looked at are Maximum Temperature, Cloudiness, Humidity, and Wind Speed.<br>This website provide the access to the data and visualizations created as part of
-                        the analysis as well explanations and descriptions of any trend and correlation witnessed.
-                    </section>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="viz">
-                    <p id="p2">Visualization</p>
+            <div class="col-lg-12">
+                <div class="compare">
+
+                    <p id="p2">comparison</p>
                     <hr>
                     <div class="row">
-                        <div class="col-lg-6 col-md-3">
-                            <a class="temp active" href="Temp-lat.html"><img src="WebVisualizations/Resources/assets/images/Fig1.png" width=250 height=200 alt="City Latitude vs Max Temperature"></a>
+                        <div class="col-lg-6 col-md-12 text-center">
+                            <p id="p2">vs Temperature</p>
+                            <a href="Temp-lat.html"><img class="temp" src="WebVisualizations/Resources/assets/images/Fig1.png" width=400 height=300 alt="City Latitude vs Max Temperature"></a>
                         </div>
-                        <div class="col-lg-6 col-md-3">
-                            <a class="wind" href="wind-lat.html"><img src="WebVisualizations/Resources/assets/images/Fig4.png" width=250 height=200 alt="City Latitude vs Wind Speed"></a>
+                        <div class="col-lg-6 col-md-12 text-center">
+                            <p id="p2">vs Wind Speed</p>
+                            <a href="wind-lat.html"><img class="wind" src="WebVisualizations/Resources/assets/images/Fig4.png" width=400 height=300 alt="City Latitude vs Wind Speed"></a>
                         </div>
-                        <div class="col-lg-6 col-md-3">
-                            <a class="cloud" href="cloud-lat.html"><img src="WebVisualizations/Resources/assets/images/Fig3.png" width=250 height=200 alt="City Latitude vs Cloudiness"></a>
+                        <div class="col-lg-6 col-md-12 text-center">
+                            <p id="p2">vs Cloudiness</p>
+                            <a href="cloud-lat.html"><img class="cloud" src="WebVisualizations/Resources/assets/images/Fig3.png" width=400 height=300 alt="City Latitude vs Cloudiness"></a>
                         </div>
-                        <div class="col-lg-66 col-md-3">
-                            <a class="humid" href="humid-lat.html"><img src="WebVisualizations/Resources/assets/images/Fig2.png" width=250 height=200 alt="City Latitude vs Humidity"></a>
+                        <div class="col-lg-66 col-md-12 text-center">
+                            <p id="p2">vs Humidity</p>
+                            <a href="humid-lat.html"><img class="humid" src="WebVisualizations/Resources/assets/images/Fig2.png" width=400 height=300 alt="City Latitude vs Humidity"></a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
     </div>
 </body>
+
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
