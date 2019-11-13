@@ -43,7 +43,7 @@ body {
 
 section {
     position: relative;
-    margin: 20px
+    margin: 20px;
 }
 
 p {
@@ -126,23 +126,36 @@ p {
 
 /* for larger devices */
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .temp,
     .humid,
     .wind,
     .cloud {
-        margin-top: 50px;
+        margin-top: 20px;
         width: 200;
         height: auto;
         align-items: center;
         position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main .viz {
+        background-color: white;
+        font-size: 20px;
+        color: black;
+        height: 620px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 }
 
 
 /* for medium devices */
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .temp,
     .humid,
     .wind,
