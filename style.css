@@ -46,6 +46,11 @@ section {
     margin: 20px;
 }
 
+.table {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 p {
     color: #00b0b0;
     font-size: 30px;
@@ -73,18 +78,79 @@ p {
 }
 
 .compare {
-    margin: 20px;
     background-color: white;
     font-size: 20px;
     color: black;
-    height: 920px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    height: 1200px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main-img {
     float: left;
+}
+
+.gallery-block {
+    padding-bottom: 60px;
+}
+
+.gallery-block .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+    overflow: hidden;
+    margin-bottom: 0;
+    background: black;
+    opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+    transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 1;
+    color: #fff;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+    font-size: 0.8em;
+    margin-top: 10px;
+    font-weight: 300;
 }
 
 
@@ -221,5 +287,18 @@ p {
         margin-left: auto;
         margin-top: 40px;
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .gallery-block.compact-gallery .item .description {
+        opacity: 0;
+    }
+    .gallery-block.compact-gallery .item a:hover .description {
+        opacity: 1;
+    }
+    .gallery-block .zoom-on-hover:hover .image {
+        transform: scale(1.3);
+        opacity: 0.7;
     }
 }

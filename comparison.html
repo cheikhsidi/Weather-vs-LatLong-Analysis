@@ -51,29 +51,54 @@
                     <p id="p2">comparison</p>
                     <hr>
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 text-center">
-                            <p id="p2">vs Temperature</p>
-                            <a href="Temp-lat.html"><img class="temp" src="WebVisualizations/Resources/assets/images/Fig1.png" width=400 height=300 alt="City Latitude vs Max Temperature"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 text-center">
-                            <p id="p2">vs Wind Speed</p>
-                            <a href="wind-lat.html"><img class="wind" src="WebVisualizations/Resources/assets/images/Fig4.png" width=400 height=300 alt="City Latitude vs Wind Speed"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 text-center">
-                            <p id="p2">vs Cloudiness</p>
-                            <a href="cloud-lat.html"><img class="cloud" src="WebVisualizations/Resources/assets/images/Fig3.png" width=400 height=300 alt="City Latitude vs Cloudiness"></a>
-                        </div>
-                        <div class="col-lg-66 col-md-12 text-center float-right">
-                            <p id="p2">vs Humidity</p>
-                            <a href="humid-lat.html"><img class="humid" src="WebVisualizations/Resources/assets/images/Fig2.png" width=400 height=300 alt="City Latitude vs Humidity"></a>
-                        </div>
+                        <!-- ---------------------------------------------------------------------- -->
+                        <section class="gallery-block compact-gallery">
+                            <div class="container">
+                                <div class="heading">
+
+                                </div>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                                        <p id="p2">vs Temperature</p>
+                                        <a class="lightbox" href="../img/image1.jpg">
+                                            <img class="img-fluid image" src="WebVisualizations/Resources/assets/images/Fig1.png">
+
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                                        <p id="p2">vs Humidity</p>
+                                        <a class="lightbox" href="../img/image2.jpg">
+
+                                            <img class="img-fluid image" src="WebVisualizations/Resources/assets/images/Fig2.png">
+
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                                        <p id="p2">vs Cloudiness</p>
+                                        <a class="lightbox" href="../img/image3.jpg">
+                                            <img class="img-fluid image" src="WebVisualizations/Resources/assets/images/Fig3.png">
+
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                                        <p id="p2">vs Wind Speed</p>
+                                        <a class="lightbox" href="../img/image4.jpg">
+                                            <img class="img-fluid image" src="WebVisualizations/Resources/assets/images/Fig4.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 </body>
 
 <!-- Footer -->
@@ -86,5 +111,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    baguetteBox.run('.compact-gallery', {
+        animation: 'slideIn'
+    });
+</script>
 
 </html>
